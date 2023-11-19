@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamElements Overlay</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            background-color: transparent;
+        }
+
+        #overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay-text">Default Text</div>
+
+    <script>
+        const overlayText = document.getElementById('overlay-text');
+
+        function updateOverlay(newText) {
+            overlayText.innerText = newText;
+        }
+    </script>
+</body>
+</html>
